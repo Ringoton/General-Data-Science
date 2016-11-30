@@ -1,3 +1,9 @@
+import re
+import pandas
+import numpy
+
+raw = open("Auto.txt")
+data = raw.read()
 data = data.strip().split('\n')
 header = re.split('\t| ', data[0])
 list = []
